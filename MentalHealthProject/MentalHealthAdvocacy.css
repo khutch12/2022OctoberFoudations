@@ -1,0 +1,40 @@
+header { 
+    font-size: 40px;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border-spacing:0;
+    width:100%;
+    border:1px solid black;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+/*width*/
+::-webkit-scrollbar-track {
+    width: 10px;
+}
+/*Track*/
+::-webkit-scrollbar-track { 
+    background: #f1f1f1;
+}
+/*Handle*/
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/*Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.scroll {
+    display: block;
+    border: 0px solid red;
+    padding: 5px;
+    width:100%;
+    height:100px;
+    overflow-y:scroll;
+}

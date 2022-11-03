@@ -1,0 +1,125 @@
+    /*COMMENTS
+    I am trying to make the navigation bar links more spread out from eachother
+    I would also like to make a column style with each major heading.
+    -or section out the different major headings.
+    THIS CODE IS MESSY... NOT TOO ORGANIZED.
+    -h6 is being used for all different headings making it hard to use separate style sheets
+    The sticky class used for the header is blocking the navbox id attributes when the header is aligned
+    to the left of the page.
+    -I wanted my name and the top navigation menu to be in a fixed position when scrolling/navigating
+    */
+    h1 {
+        /*NOT IN USE*/
+        font-size:50px;
+        color: rgb(81, 89, 129);
+        background-color: slategray;
+        width: fit-content;
+    }
+    h2{
+        /*NOT IN USE*/
+        text-align: center; 
+        font-size:45px;
+        color: rgb(81, 89, 129);
+        background-color: slategray;
+        border-style: solid;
+        width:fit-content;
+    }
+    h3 {
+        /*NOT IN USE*/
+        text-align: center;
+        font-size:40px;
+        color: rgb(81, 89, 129);
+        background-color:slategray;
+        width:fit-content;
+    }
+    h4 {
+        /*NOT IN USE*/
+        font-size: 
+        35px;
+    }
+    h5 {
+        /*NOT IN USE*/
+        font-size:21px;
+        color: rgb(81, 89, 129);
+        background-color: slategray;
+        width:fit-content;
+        margin-bottom: 1px;
+    }
+    h6{
+        font-size: 20px;
+        color: rgb(81, 89, 129);
+        background-color: slategray;
+        width: fit-content;
+        margin-bottom:1px;
+    }
+    body {
+        background-color:rgb(81, 89, 129);
+        font-family: sans-serif; 
+        font-size:16px;
+        background-image: url(https://photos.app.goo.gl/pjbhPnEUXhiaxG2L8);
+        color:snow;
+    }
+    p {
+        width:500px;
+    }
+    b, em, i {
+        color: rgb(106, 206, 196);
+    }
+    li {
+        display:grid;
+    }
+    /*style top nav bar*/
+    .topnav {
+        background-color: transparent;
+    }
+    /*style top nav link*/
+    .topnav a:link {
+        color:snow;
+        background-color: transparent;
+    }
+    
+    .topnav a:visited {
+        color:snow;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+        color:wheat;
+        background-color: transparent;
+        text-decoration-line: underline;
+        border-style: none;
+    }
+    #navbox {
+        border-style: dashed;
+        width:fit-content;
+        border-color: blanchedalmond;
+        padding: 4px;
+        float:top;
+    }
+    .sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+    .dropdown {
+        position:relative;
+        display:inline-block;
+    }
+    .dropdown-content {
+        display:none;
+        position:relative;
+        color: wheat;
+        background-color:transparent;
+        width: 600px;
+        box-shadow: 0px 8px 16px 0px;
+        rgba(0,0,0,0.2)
+        padding: 12px 16px;
+        z-index: 1px;
+    }
+    .dropdown:hover .dropdown-content {display:block}
+    .dropdown-header{
+        font-size: 15px;
+        color:snow;
+        width:fit-content;
+    }
